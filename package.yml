@@ -1,0 +1,28 @@
+name       : jitsi
+version    : 2.8.5426
+release    : 1
+source     :
+    - https://download.jitsi.org/jitsi/src/jitsi-src-2.8.5426.zip : e649867e186cf195c4b1bb159d7ffe0a38c4dc60659e5c55f9a74461a309f36c
+license    : Apache-2.0
+component  : network.im
+summary    : Jitsi is a free open-source audio/video and chat communicator
+description: |
+    Jitsi is a free open-source audio/video and chat communicator
+builddeps  :
+    - pkgconfig(gtk+-2.0)
+    - pkgconfig(libpulse)
+    - pkgconfig(xscrnsaver)
+    - pkgconfig(xv)
+    - apache-ant
+rundeps    :
+    - openjdk-8
+build      : |
+    ant rebuild
+install    : |
+    find lib/ lib/bundle/ -maxdepth 1 -type f -exec install -Dm644 {} $installdir/usr/share/jitsi/{} \;
+    shopt -sq extglob
+    find lib/native/linux-64 -maxdepth 1 -type f -execdir install -Dm644 {} $installdir/usr/share/jitsi/lib/native/{} \;
+    find sc-bundles/{,os-specific/linux/} -maxdepth 1 -type f -execdir install -Dm644 {} $installdir/usr/share/jitsi/sc-bundles/{} \;
+    install -Dm755 $pkgfiles/jitsi.sh $installdir/usr/bin/jitsi
+    install -Dm644 $pkgfiles/jitsi.desktop $installdir/usr/share/applications/jitsi.desktop
+    install -Dm644 resources/install/debian/jitsi.svg $installdir/usr/share/pixmaps/jitsi.svg
