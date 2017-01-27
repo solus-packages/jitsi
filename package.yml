@@ -1,6 +1,6 @@
 name       : jitsi
 version    : 2.8.5426
-release    : 1
+release    : 2
 source     :
     - https://download.jitsi.org/jitsi/src/jitsi-src-2.8.5426.zip : e649867e186cf195c4b1bb159d7ffe0a38c4dc60659e5c55f9a74461a309f36c
 license    : Apache-2.0
