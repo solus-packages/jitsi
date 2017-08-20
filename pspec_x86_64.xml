@@ -26,9 +26,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2016-11-28</Date>
-            <Version>2.8.5426</Version>
+        <Update release="4">
+            <Date>2017-08-20</Date>
+            <Version>2.10.5550</Version>
             <Comment>Packaging update</Comment>
             <Name>Bryan T. Meyers</Name>
             <Email>bmeyers@datadrake.com</Email>
