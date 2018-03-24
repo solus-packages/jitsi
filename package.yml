@@ -1,8 +1,8 @@
 name       : jitsi
-version    : 2.10.5550
-release    : 4
+version    : 2.11.5602
+release    : 5
 source     :
-    - https://download.jitsi.org/jitsi/src/jitsi-src-2.10.5550.zip : cdfc6f038d1b877c42d26dba1864ac7c6b554dd55c18767a29f2db3618647287
+    - https://github.com/jitsi/jitsi/archive/5602.tar.gz : 01a4567e11388ae075522b6f26203a55e8464d94c21c814000196b960c5e5637
 license    : Apache-2.0
 component  : network.im
 summary    : Jitsi is a free open-source audio/video and chat communicator
