@@ -1,6 +1,6 @@
 name       : jitsi
 version    : 2.11.5602
-release    : 5
+release    : 6
 source     :
     - https://github.com/jitsi/jitsi/archive/5602.tar.gz : 01a4567e11388ae075522b6f26203a55e8464d94c21c814000196b960c5e5637
 license    : Apache-2.0
