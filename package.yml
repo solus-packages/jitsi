@@ -1,6 +1,6 @@
 name       : jitsi
-version    : '5633'
-release    : 8
+version    : '2.11.5633'
+release    : 9
 source     :
     - https://github.com/jitsi/jitsi/archive/5633.tar.gz : ad2ad72ac0103190f2ecd180861a12370cca1a8ca5c57474eff2967e2ca8c01e
 license    : Apache-2.0
